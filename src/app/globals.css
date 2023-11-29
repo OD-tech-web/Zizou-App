@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kenia&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-height: 484px) {
+  .theme-toggle {
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-height: 485px) {
+  .theme-toggle {
+    position: fixed;
+    bottom: 0;
+  }
+}
